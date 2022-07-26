@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.container .header {
+    width: 100%;
+    height: 150px;
+    background-color: darkcyan;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header img {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    left: 50px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.5s;
+    user-select: none;
+    filter: grayscale(100%);
+}
+
+.header img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.15);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.header-text {
+    color: white;
+    width: 70%;
+    margin-left: auto;
+}
+
+.header-text h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.header-text p {
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Left Section */
+.left_side {
+    width: 30%;
+    background-color: darkseagreen;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.left_side h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.left_side .contact {
+    margin-top: 130px;
+    padding: 0 20px;
+}
+
+.contact h5{
+    font-size: 18px;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.contact p {
+    font-weight: 300;
+}
+
+.contact h5 span {
+    margin-left: 8px;
+}
+
+.skills {
+    margin-top: 30px;
+}
+
+.bars{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px 10px;
+    padding: 0 5px;
+}
+
+.bars .bar p {
+    font-weight: 500 ;
+}
+
+.bar span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(141, 150, 172);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar span::before{
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.follow h1{
+    margin-top: 35px;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.follow h3 {
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: 300;
+}
+
+.follow a {
+    color: rgb(91, 72, 72);
+    font-size: 15px;
+}
+
+.follow h3 span {
+    margin-left: 8px;
+}
+/* Right Section */
+.right_side {
+    width: 70%;
+    padding: 50px;
+}
+
+.right_side h1{
+    font-size: 35px;
+}
+
+.right_side h1 span{
+    margin-right: 15px;
+    font-size: 40px;
+}
+
+.right_side p{
+    padding-left: 50px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 16.5px;
+    color: gray;
+    margin-top: 8px;
+}
+
+.work {
+    margin-top: 30px;
+}
+
+.work .work-group{
+    position: relative;
+}
+
+.work-group {
+    margin: 10px;
+}
+
+.work-group h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 40px;
+}
+
+.work-group h4 {
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 40px;
+    color: gray;
+}
+
+.work-group span {
+    font-size: 15px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.work-group p{
+    font-size: 12px;
+    padding-left: 40px;
+}
+
+.education {
+    margin-top: 30px;
+}
+
+.education h1{
+    padding-left: 10px;
+}
+
+.edu-group{
+    position: relative;
+}
+
+.edu-group h4 {
+    padding-left: 60px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.edu-group p{
+    padding-left: 60px;
+}
+
+.edu-group span {
+    position: absolute;
+    font-size: 15px;
+    top: 3px;
+    right: 0;
+}
+
+button {
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 15px 0 0 550px;
+    background-color: antiquewhite;
+    border: none;
+    outline: none;
+    color: rgb(28, 26, 26);
+    border-radius: 18px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: black;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+button span {
+    padding-left: 15px;
+    color: darkgoldenrod;
+}
