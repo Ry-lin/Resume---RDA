@@ -12,7 +12,7 @@
     margin: 20px auto;
 }
 
-.container .header {
+.container header {
     width: 100%;
     height: 150px;
     background-color: darkcyan;
@@ -21,7 +21,7 @@
     position: relative;
 }
 
-.header img {
+header img {
     width: 225px;
     height: 225px;
     border-radius: 50%;
@@ -36,7 +36,7 @@
     filter: grayscale(100%);
 }
 
-.header img:hover{
+header img:hover{
     filter: grayscale(0%);
     transform: scale(1.15);
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
@@ -72,7 +72,7 @@
     padding-bottom: 30px;
 }
 
-.left_side h4{
+.left_side h2{
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: underline;
@@ -83,17 +83,17 @@
     padding: 0 20px;
 }
 
-.contact h5{
+.contact h3{
     font-size: 18px;
     margin: 8px 0;
     font-weight: 500;
 }
 
-.contact p {
+.contact a {
     font-weight: 300;
 }
 
-.contact h5 span {
+.contact h3 span {
     margin-left: 8px;
 }
 
@@ -128,7 +128,7 @@
     content: "";
     width: 70%;
     height: 80%;
-    background-color: black;
+    background-color: #000000;
     top: 50%;
     left: 2px;
     transform: translateY(-50%);
@@ -141,7 +141,7 @@
     text-decoration: underline;
 }
 
-.follow h3 {
+.follow h2 {
     font-size: 20px;
     margin: 5px 0;
     font-weight: 300;
@@ -152,30 +152,30 @@
     font-size: 15px;
 }
 
-.follow h3 span {
+.follow h2 span {
     margin-left: 8px;
 }
 /* Right Section */
-.right_side {
+.right__side {
     width: 70%;
     padding: 50px;
 }
 
-.right_side h1{
+.right__side h1{
     font-size: 35px;
 }
 
-.right_side h1 span{
+.right__side h1 span{
     margin-right: 15px;
     font-size: 40px;
 }
 
-.right_side p{
+.right__side p{
     padding-left: 50px;
     text-align: justify;
     word-break: break-all;
-    font-size: 16.5px;
-    color: gray;
+    font-size: 20px;
+    color: #808080;
     margin-top: 8px;
 }
 
@@ -183,38 +183,51 @@
     margin-top: 30px;
 }
 
-.work .work-group{
+.work .work--group{
     position: relative;
 }
 
-.work-group {
+.work--group {
     margin: 10px;
 }
 
-.work-group h3 {
+.work--group li {
     margin-top: 20px;
-    font-size: 22px;
-    font-weight: normal;
+    font-size: 28px;
+    font-weight: 500;
     padding-left: 40px;
 }
 
-.work-group h4 {
+.work--group h3 {
     font-size: 18px;
     font-weight: normal;
     padding-left: 40px;
-    color: gray;
+    color: #808080;
 }
 
-.work-group span {
-    font-size: 15px;
+.work--group span {
+    font-size: 16px;
     position: absolute;
     top: 5px;
     right: 0;
 }
 
-.work-group p{
+.work--group p{
     font-size: 12px;
     padding-left: 40px;
+}
+
+.work--group ul li:nth-child(2) {
+    font-size: px;
+    font-weight: 350;
+    font-style: italic;
+    color: #808080;
+}
+
+ul li:not(:first-child) {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .education {
@@ -225,47 +238,59 @@
     padding-left: 10px;
 }
 
-.edu-group{
+.edu--group{
     position: relative;
 }
 
-.edu-group h4 {
+.edu--group li {
     padding-left: 60px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 400;
 }
 
-.edu-group p{
+.edu--group p{
     padding-left: 60px;
 }
 
-.edu-group span {
+.edu--group span {
     position: absolute;
-    font-size: 15px;
+    font-size: 16px;
     top: 3px;
     right: 0;
+}
+
+.edu--group ul li:not(:first-child) {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.edu--group ul li:nth-child(2) {
+    color: #808080;
+    font-weight: 300;
 }
 
 button {
     font-size: 25px;
     padding: 10px 20px;
     margin: 15px 0 0 550px;
-    background-color: antiquewhite;
+    background-color: #faebd7;
     border: none;
     outline: none;
     color: rgb(28, 26, 26);
     border-radius: 18px;
     box-shadow: rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    transition: 0.5s;
+    transition: all .2s ease-in-out;
 }
 
 button:hover {
     background-color: black;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    transform: scale(1.15);
 }
 
 button span {
     padding-left: 15px;
-    color: darkgoldenrod;
+    color: #b8860b;
 }
